@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MidTermReview.Models;
 
 namespace MidTermReview.Data
 {
@@ -9,5 +10,6 @@ namespace MidTermReview.Data
             : base(options)
         {
         }
+        public DbSet<MidTermReview.Models.Candidates> Candidates { get; set; } = default!;
     }
 }
